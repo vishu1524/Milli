@@ -55,11 +55,12 @@
 
 
 		}
-
-		#heading {
-			display: inline-block;
-			text-align: center;
-			width: 1180px;
+		.heading {
+			text-align:center ;
+			width: 1120px;
+			font-size:40px;
+			text-decoration:underline;
+			
 
 		}
 
@@ -91,9 +92,11 @@
 			width: 70px;
 			height: 60px;
 			margin-top: 3px;
-			margin-bottom: 0px;
 			margin-left:5px;
+			margin-bottom: 0px;
 			filter: invert(30%);
+			padding-bottom:0px;
+			
 		}
 
 
@@ -184,6 +187,14 @@
 			padding-bottom: 7px;
 
 		}
+		span{
+			display:inline-block;
+			flex-direction: column;
+			padding-top:0px;
+			margin-top:0px;
+			margin-left:10px;
+			font-weight: bolder;
+		}
 	</style>
 </head>
 
@@ -191,16 +202,16 @@
 	<header>
 		<img src="https://media.istockphoto.com/vectors/hand-holding-torch-vector-id165072006" class="weblogo"
 			width="121px" alt="LOGO">
-
-		<div id="heading">
-			<h1><u>Welcome To My First Website</u></h1>
-		</div>
+			<span class="heading">Welcome To My First Website</span>
+			<br>
+			<span>LOGO</span>
 		<div class="image">
 			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/311266973_133647156085431_3290951804261773713_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=-F14HDC5uewAX9zrbY6&_nc_ht=scontent.fagr1-2.fna&oh=00_AT9RfTrqUFqSHpcaMk0p2-UBRYC_AElZqBslm3CfWIkepA&oe=634C80E7"
 				width="121px" alt="image"></a>
 		</div>
 		<h4><u>VISHESH YADAV</u></h4>
 
+		
 		<nav id="navbar">
 			<ul>
 
@@ -268,7 +279,7 @@
 			<b>2.</b>
 			<div id="insta">
 				<hr style="border:black">
-				<a href="https://www.instagram.com/" class="img"><img
+				<a href="https://www.instagram.com/" target="_main" class="img"><img
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
 						width="121px" alt="facebook.com"></a>
 				</hr>
@@ -294,7 +305,7 @@
 			<b>3.</b>
 			<div id="whatsapp">
 				<hr style="border:black">
-				<a href="https://web.whatsapp.com/"  class="img"><img
+				<a href="https://web.whatsapp.com/" target="_main" class="img"><img
 						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtaUYvES7mo4SQHXBxKBogulOloAkc9fGKABGA8scqhgJRyDUdj3f7JWfO_DRZeBfJoI&usqp=CAU"
 						width="121px" alt="whatsapp.com"></a>
 				<div class="textname">
@@ -323,7 +334,7 @@
 			<b>4.</b>
 			<div id="youtube">
 				<hr style="border:black">
-				<a href="https://www.youtube.com" class="img"><img
+				<a href="https://www.youtube.com" target="_main" class="img"><img
 						src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc"
 						width="121px" alt="youtube.com"></a>
 				<div class="textname">
@@ -347,7 +358,7 @@
 			<b>5.</b>
 			<div id="google">
 				<hr style="border:black">
-				<a href="https://www.google.co.in"  class="img"><img
+				<a href="https://www.google.co.in" target="_main" class="img"><img
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
 						width="121px" alt="Google.com"></a>
 				<div class="textname">
@@ -382,7 +393,7 @@
 			<b>6.</b>
 			<div id="table">
 				<hr style="border:black">
-				<a href="https://vishu1524.github.io/Result/" class="img"><img
+				<a href="https://vishu1524.github.io/Result/" target="_main" class="img"><img
 						src="https://bteup.ac.in/InstituteContent/999/Content/images/leftLogo.jpg" width="121px"
 						alt="bteup-result"></a>
 				<div class="RESULTname">
