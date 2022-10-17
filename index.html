@@ -13,8 +13,10 @@
 			margin: 20px;
 			/*border: 3px solid black;
 			border-radius: 8px;*/
-			width:100%vw;
-			height:100%vh;}
+			width: 100%vw;
+			height: 100%vh;
+		}
+
 		header {
 			font-family: "Trirong", serif;
 			background-color: #342c7496;
@@ -31,13 +33,13 @@
 			background-color: rgb(232, 164, 164);
 			border: 2px solid black;
 			border-radius: 10px;
-			
+
 
 		}
 
 		#navbar a {
 			text-decoration: none;
-			
+
 		}
 
 		a:hover {
@@ -48,19 +50,24 @@
 			overflow: auto;
 		}
 
-		.search {
+		#google_translate_element {
 			float: right;
-			margin: 20px;
-			margin-top: 4px;
+            margin: 20px;
+            margin-top: 4px;
+			text-align:right;
 
 
 		}
-		.heading {
-			text-align:center ;
-			width: 1120px;
-			font-size:40px;
-			text-decoration:underline;
-			
+
+		h1 {
+			display: inline-block;
+			text-align: center;
+			margin-left: 27%;
+			padding-right: 25px;
+			text-decoration: underline;
+
+
+
 
 		}
 
@@ -71,7 +78,7 @@
 			padding: 3px, 0px;
 			margin: 15px;
 			margin-top: 4px;
-			
+
 		}
 
 		.text {
@@ -92,11 +99,11 @@
 			width: 70px;
 			height: 60px;
 			margin-top: 3px;
-			margin-left:5px;
+			margin-left: 5px;
 			margin-bottom: 0px;
 			filter: invert(30%);
-			padding-bottom:0px;
-			
+			padding-bottom: 0px;
+
 		}
 
 
@@ -187,14 +194,15 @@
 			padding-bottom: 7px;
 
 		}
-		span{
+
+		/*span{
 			display:inline-block;
 			flex-direction: column;
 			padding-top:0px;
 			margin-top:0px;
 			margin-left:10px;
 			font-weight: bolder;
-		}
+		}*/
 	</style>
 </head>
 
@@ -202,27 +210,35 @@
 	<header>
 		<img src="https://media.istockphoto.com/vectors/hand-holding-torch-vector-id165072006" class="weblogo"
 			width="121px" alt="LOGO">
-			<span class="heading">Welcome To My First Website</span>
-			<br>
-			<span>LOGO</span>
+		<h1>Welcome To My First Website</h1>
+		<br>
+
+
 		<div class="image">
-			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/311266973_133647156085431_3290951804261773713_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=-F14HDC5uewAX9zrbY6&_nc_ht=scontent.fagr1-2.fna&oh=00_AT9RfTrqUFqSHpcaMk0p2-UBRYC_AElZqBslm3CfWIkepA&oe=634C80E7"
+			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/311266973_133647156085431_3290951804261773713_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=UBz340RSEvsAX8EzlQt&_nc_ht=scontent.fagr1-2.fna&oh=00_AT_A6IL5Y_ByUi_WoJH7cQJst6Lq6mq7bWbrgfZr8QxO6g&oe=63526FA7"
 				width="121px" alt="image"></a>
 		</div>
 		<h4><u>VISHESH YADAV</u></h4>
 
-		
+
 		<nav id="navbar">
 			<ul>
 
-				<li><a href="https://vishu1524.github.io/Home/">Home</a></li>
+				<li><a href="#">Home</a></li>
 				<li><a href="https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/"
 						target="_blank">About</a></li>
 				<li> <a href="#">Help</a></li>
-				<li><a href="https://vishu1524.github.io/phone/">Contact</a></li>
-				<div class="search">
-					<input type="text" name="search" placeholder="search box">
-				</div>
+				<li><a href="#">Contact</a></li>
+				<div id="google_translate_element"></div>
+
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+						new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+					}
+				</script>
+
+				<script type="text/javascript"
+					src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 			</ul>
 
@@ -253,7 +269,7 @@
 			<br>
 			<b>1.</b>
 
-			<div id="facebook">""
+			<div id="facebook">
 				<hr style="border:black">
 
 				<a href="https://facebook.com" class="img"><img
@@ -393,7 +409,7 @@
 			<b>6.</b>
 			<div id="table">
 				<hr style="border:black">
-				<a href="https://vishu1524.github.io/Result/" class="img"><img
+				<a href="/table.html" target="_main" class="img"><img
 						src="https://bteup.ac.in/InstituteContent/999/Content/images/leftLogo.jpg" width="121px"
 						alt="bteup-result"></a>
 				<div class="RESULTname">
